@@ -10,44 +10,61 @@
 
   <body>
     <header id="start-page">
-      <div>Coding Quiz Challenge</div>
+     <div class="menu">
+      <button id="score-block-btn" class="btn1">View High Scores</button>
+      <p class="time-display">Time: 0</p>
+     </div>
+      <h1>Coding Quiz Challenge</h1>
       <div class="instructions">
         Think you know more about Javascript than the average bootcamper? 
-        Take this quiz to find out! Keep in mind that wrong answers 
+        Take this quiz to find out!<br>Keep in mind that wrong answers 
         will penalize your score/time by 10 seconds.
       </div>
-      <button id="generate">Start Quiz</button>
+      <div style="text-align:center;">
+      <button id="generate" class="startb"  >Start Quiz</button>
+    </div >
     </header>
 
      <main id="main-quiz" class="hide">
-
+      <div class="menu">
+        <button id="score-block-btn" class="btn1">View High Scores</button>
+        </div>
         <div class= "card timer">
           <div class = "timer-text">
-          <div class="lrge-font timer-count">100</div>
-          <h3>seconds remaining</h3>
+          <div class="lrge-font timer-count time-display">60</div>
         </div>
         <h1 id="question-text">Question text</h1>
-        <div class="answers">
-          <button data-value="1" class="options">Answer 1</button>
-          <button data-value="2" class="options">Answer 2</button>
-          <button data-value="3"class="options">Answer 3</button>
-          <button data-value="4"class="options">Answer 4</button>
+        <div class="answers" style="text-align: center;">
+          <button data-value="1" class="options btn1" >Answer 1</button>
+          <button data-value="2" class="options btn1">Answer 2</button>
+          <button data-value="3"class="options btn1">Answer 3</button>
+          <button data-value="4"class="options btn1">Answer 4</button>
         </div>
+        <div id="result-text" style="color: grey; padding: 15px; font-size: 40px; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"></div>
+
       </main>
 
-        <form id="inital-form" class ="hide">
+        <form id="initial-form" class ="hide" style="text-align: center;">
           <div>
-              <label for="name">Enter Initials:</label>
+            <div style=" text-align:center; padding:15px; font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">All done!</div>
+            <h3 style=" text-align:center; padding: 5px; font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Final Score:</h3>
+            <div id="score-user" style="padding:15px; font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"></div>
+              <label for="name" style=" text-align:center; padding:15px; font-size: 50px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">Enter Initials:</label>
               <textarea id="namebox"></textarea>
               
        
-          <button id="save">SAVE</button>
+          <button id="save" >SAVE</button>
+          <div class="menu">
+            <button id="score-block-btn" class="btn1">View High Scores</button>
+            </div>
         </form> 
     
 
-        <div id="score-block" class="hide">
-          <h3 class="message"> </h3>
-        </div>
+        <section id="score-block" class="hide">
+          <h3 class="message">hola </h3>
+          <button>Go back</button>
+          <button>Clear high scores</button>
+        </section>
 
      <script src="assets/js/script.js"></script>
   </body>
