@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Do you know more Javascript than the average bootcamper?</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header id="start-page">
+      <div>Coding Quiz Challenge</div>
+      <div class="instructions">
+        Think you know more about Javascript than the average bootcamper? 
+        Take this quiz to find out! Keep in mind that wrong answers 
+        will penalize your score/time by 10 seconds.
+      </div>
+      <button id="generate">Start Quiz</button>
+    </header>
+
+     <main id="main-quiz" class="hide">
+
+        <div class= "card timer">
+          <div class = "timer-text">
+          <div class="lrge-font timer-count">100</div>
+          <h3>seconds remaining</h3>
+        </div>
+        <h1 id="question-text">Question text</h1>
+        <div class="answers">
+          <button data-value="1" class="options">Answer 1</button>
+          <button data-value="2" class="options">Answer 2</button>
+          <button data-value="3"class="options">Answer 3</button>
+          <button data-value="4"class="options">Answer 4</button>
+        </div>
+      </main>
+
+        <form id="inital-form" class ="hide">
+          <div>
+              <label for="name">Enter Initials:</label>
+              <textarea id="namebox"></textarea>
+              
+       
+          <button id="save">SAVE</button>
+        </form> 
+    
+
+        <div id="score-block" class="hide">
+          <h3 class="message"> </h3>
+        </div>
+
+     <script src="assets/js/script.js"></script>
+  </body>
+</html>

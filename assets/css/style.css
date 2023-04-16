@@ -1,0 +1,14 @@
+#main-quiz {
+    display:none;
+}
+#main-quiz.show{
+    display:block;
+}
+
+#start-page.hide{
+    display: none;
+
+}
+.hide{
+    display: none;
+}
