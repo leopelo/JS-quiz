@@ -21,7 +21,7 @@ var saveButton = document.getElementById("save");
 
 var questionIndex =0;
 var answersIndex;
-
+//questions to be displayed
 var questionData = [
     {
     question: "Commonly used data types DO NOT include:",
@@ -75,9 +75,10 @@ var questionData = [
     },
 ]
 
+//function to load question based on assigned question index
 function loadQuestions(){
     var question = questionData[questionIndex].question
-  //  var answers = answers[answersIndex]
+ 
     
     questionElement.innerText = question;
     for(let i=0;i<4;i++){
@@ -87,7 +88,7 @@ function loadQuestions(){
    
 }
 
-
+//event listener to start game with used functions underneath
 startBtn.addEventListener("click", function(){
     document.querySelector("#start-page").setAttribute("class","hide");
     document.querySelector("#main-quiz").setAttribute("class","show");
@@ -115,13 +116,7 @@ function startTimer() {
     }, 1000);
 }
 
-/*function startGame() {
-    document.getElementById("generate").click();
-    timerCount = 100;
-    startTimer();
-}*/
-
-
+//add result text and manipulate score to be displayed
 function checkAnswers(event) {
     event.preventDefault();
     var userAnswer = event.target.getAttribute("data-value")
